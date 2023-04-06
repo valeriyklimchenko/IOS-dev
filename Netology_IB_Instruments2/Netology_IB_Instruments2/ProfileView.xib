@@ -15,37 +15,37 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Foto" translatesAutoresizingMaskIntoConstraints="NO" id="bfT-49-joU">
-                    <rect key="frame" x="10" y="59" width="160" height="160"/>
+                    <rect key="frame" x="10" y="0.0" width="159.66666666666666" height="159.66666666666666"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="bfT-49-joU" secondAttribute="height" multiplier="1:1" id="cTx-LG-EO2"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Кеша Хорьков" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5s-jL-aLU">
-                    <rect key="frame" x="190" y="59" width="230" height="40"/>
+                    <rect key="frame" x="189.66666666666663" y="0.0" width="230.33333333333337" height="40"/>
                     <color key="backgroundColor" red="0.88173923601777171" green="0.71328972644854161" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Калиниград" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML1-ZV-WTY">
-                    <rect key="frame" x="190" y="179" width="230" height="40"/>
+                    <rect key="frame" x="189.66666666666663" y="119.66666666666669" width="230.33333333333337" height="40"/>
                     <color key="backgroundColor" red="0.83960197250000002" green="1" blue="0.85614039109999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AmD-WA-dEL">
-                    <rect key="frame" x="10" y="229" width="410" height="393"/>
+                    <rect key="frame" x="10" y="169.66666666666663" width="410" height="393"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="393" id="iC5-Rl-Bv1"/>
                     </constraints>
-                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11.05.2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Z5-Gf-ogx">
-                    <rect key="frame" x="190" y="119" width="230" height="40"/>
+                    <rect key="frame" x="189.66666666666663" y="60" width="230.33333333333337" height="39.666666666666657"/>
                     <color key="backgroundColor" red="0.71401634152368398" green="0.91358357589698658" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                     <nil key="textColor"/>
@@ -75,6 +75,13 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="g5s-jL-aLU" secondAttribute="trailing" constant="10" id="voo-z7-GeX"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AmD-WA-dEL" secondAttribute="trailing" constant="10" id="xTE-Da-gLr"/>
             </constraints>
+            <connections>
+                <outlet property="city" destination="ML1-ZV-WTY" id="ibN-uF-7Q1"/>
+                <outlet property="dateOfBirth" destination="1Z5-Gf-ogx" id="sYB-4c-RPy"/>
+                <outlet property="foto" destination="bfT-49-joU" id="0NE-UF-Fy1"/>
+                <outlet property="myText" destination="AmD-WA-dEL" id="5dI-Tw-ftk"/>
+                <outlet property="name" destination="g5s-jL-aLU" id="7Pf-xQ-g8Y"/>
+            </connections>
             <point key="canvasLocation" x="-7.2463768115942031" y="-13.858695652173914"/>
         </view>
     </objects>
